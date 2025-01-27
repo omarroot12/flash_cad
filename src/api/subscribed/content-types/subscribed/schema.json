@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscribeds",
+  "info": {
+    "singularName": "subscribed",
+    "pluralName": "subscribeds",
+    "displayName": "Subscribed"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "tele": {
+      "type": "text"
+    }
+  }
+}

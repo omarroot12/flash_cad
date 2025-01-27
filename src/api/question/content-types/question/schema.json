@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "singularName": "question",
+    "pluralName": "questions",
+    "displayName": "Questions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "richtext"
+    },
+    "answer": {
+      "type": "richtext"
+    },
+    "main_section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::main-section.main-section"
+    },
+    "sub_section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sub-section.sub-section"
+    },
+    "topic": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::topic.topic"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
